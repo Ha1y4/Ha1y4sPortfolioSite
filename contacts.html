@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ha1y4 — Контакты</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+<header class="site-header">
+    <h2 class="logo"><a href="index.html">ha1y4</a></h2>
+
+    <nav class="header-pages">
+        <a class="header-page-text" href="index.html">Обо мне</a>
+        <a class="header-page-text" href="portfolio.html">Работы</a>
+        <a class="header-page-text" href="contacts.html">Контакты</a>
+    </nav>
+</header>
+
+<main class="contacts-column">
+    <section class="page-headline">
+        <p class="small-text">КОНТАКТЫ</p>
+        <h1>Связаться со мной</h1>
+        <p class="page-description">Расскажите, какой ролик вам нужен, и выберите, где вам удобнее общаться.</p>
+    </section>
+
+    <section class="form-panel">
+        <h2 class="section-title">Написать мне</h2>
+
+        <form class="contact-form">
+            <label class="form-label" for="client-name">Как к вам обращаться?</label>
+            <input class="form-input" type="text" id="client-name" name="name" placeholder="Например, Алексей">
+
+            <fieldset class="form-group">
+                <legend class="form-label">Где вам удобнее общаться?</legend>
+                <div class="choice-options">
+                    <label class="choice-option">
+                        <input type="radio" name="method" value="telegram" checked>
+                        <span>Telegram</span>
+                    </label>
+                    <label class="choice-option">
+                        <input type="radio" name="method" value="whatsapp">
+                        <span>WhatsApp</span>
+                    </label>
+                    <label class="choice-option">
+                        <input type="radio" name="method" value="email">
+                        <span>Email</span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <label class="form-label" for="client-contact">Ваш ник, номер или почта</label>
+            <input class="form-input" type="text" id="client-contact" name="contact" placeholder="@username, номер телефона или почта">
+
+            <fieldset class="form-group">
+                <legend class="form-label">Что вас интересует?</legend>
+                <div class="choice-options">
+                    <label class="choice-option">
+                        <input type="radio" name="topic" value="youtube" checked>
+                        <span>YouTube формат</span>
+                    </label>
+                    <label class="choice-option">
+                        <input type="radio" name="topic" value="motion">
+                        <span>Чистый motion-дизайн</span>
+                    </label>
+                    <label class="choice-option">
+                        <input type="radio" name="topic" value="reels">
+                        <span>TikTok/Reels формат</span>
+                    </label>
+                    <label class="choice-option">
+                        <input type="radio" name="topic" value="special">
+                        <span>Иное</span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <label class="form-label" for="client-message">Расскажите о задаче</label>
+            <textarea class="form-input" id="client-message" name="message" rows="5" placeholder="Какой ролик нужен, примерная длина, сроки"></textarea>
+
+            <button class="form-button" type="button">Отправить заявку</button>
+        </form>
+    </section>
+
+    <section class="form-panel">
+        <h2 class="section-title">Нашли баг?</h2>
+        <p class="small-text">Опишите, что сломалось и на какой странице.</p>
+
+        <form class="contact-form">
+            <label class="form-label" for="bug-email">Ваша почта</label>
+            <input class="form-input" type="email" id="bug-email" name="email" placeholder="mail@example.com">
+
+            <label class="form-label" for="bug-message">Что случилось?</label>
+            <textarea class="form-input" id="bug-message" name="message" rows="4" placeholder="Например: на странице «Работы» не открывается видео"></textarea>
+
+            <button class="form-button" type="button">Отправить отчёт</button>
+        </form>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <article>
+        <p class="small-text">ha1y4 2026</p>
+        <a class="bug-link" href="contacts.html">Нашли баг?</a>
+    </article>
+</footer>
+</body>
+</html>

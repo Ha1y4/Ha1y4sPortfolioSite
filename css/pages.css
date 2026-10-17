@@ -1,0 +1,248 @@
+.page-headline {
+    margin: 80px 80px 40px;
+}
+
+.page-headline h1 {
+    font-family: 'Science Gothic', Arial, sans-serif;
+    font-size: 60px;
+    margin: 0;
+}
+
+.page-description {
+    max-width: 700px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+.section-title {
+    font-family: 'Science Gothic', Arial, sans-serif;
+    font-size: 36px;
+    margin: 0;
+}
+
+
+.portfolio-category {
+    margin: 0 80px 40px;
+    padding: 25px;
+    border-radius: 25px;
+    background-color: var(--header-color);
+}
+
+.category-info {
+    max-width: 700px;
+    margin-bottom: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+.category-info .small-text {
+    margin-top: 5px;
+}
+
+.video-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.video-grid-horizontal {
+    grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr));
+}
+
+.video-grid-vertical {
+    grid-template-columns: repeat(auto-fill, minmax(min(180px, 100%), 1fr));
+}
+
+.video-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    border-radius: 20px;
+    background-color: var(--bg-color);
+
+    font-family: 'Sansation', Arial, sans-serif;
+    font-size: 15px;
+    color: var(--small-text-color);
+}
+
+.video-horizontal {
+    aspect-ratio: 16 / 9;
+}
+
+.video-quadratic {
+    aspect-ratio: 1 / 1;
+}
+
+.video-vertical {
+    aspect-ratio: 9 / 16;
+}
+
+.video-placeholder video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.contacts-column {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.contacts-column .page-headline {
+    margin: 60px 0 30px;
+}
+
+.form-panel {
+    margin-bottom: 40px;
+    padding: 25px;
+    border-radius: 25px;
+    background-color: var(--header-color);
+}
+
+.contact-form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    padding: 0;
+
+    font-family: 'Sansation', Arial, sans-serif;
+    font-size: 15px;
+    color: var(--small-text-color);
+}
+
+.form-input {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px 16px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: var(--hl-color);
+
+    background-color: var(--bg-color);
+    border: 2px solid var(--button-color);
+    border-radius: 15px;
+
+    transition: border-color 0.15s ease;
+}
+
+.form-input::placeholder {
+    color: var(--small-text-color);
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--hover-color);
+}
+
+textarea.form-input {
+    resize: vertical;
+}
+
+.choice-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.choice-option {
+    position: relative;
+}
+
+.choice-option input {
+    position: absolute;
+    opacity: 0;
+}
+
+.choice-option span {
+    display: inline-block;
+    padding: 10px 18px;
+
+    font-family: 'Sansation', Arial, sans-serif;
+    font-size: 16px;
+    color: var(--hl-color);
+
+    border: 2px solid var(--button-color);
+    border-radius: 25px;
+    cursor: pointer;
+
+    transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.choice-option span:hover {
+    border-color: var(--hover-color);
+}
+
+.choice-option input:checked + span {
+    color: var(--hover-color);
+    border-color: var(--hover-color);
+}
+
+.choice-option input:focus-visible + span {
+    outline: 2px solid var(--hl-color);
+    outline-offset: 2px;
+}
+
+.form-button {
+    padding: 12px 28px;
+
+    font-family: 'Sansation', Arial, sans-serif;
+    font-size: 18px;
+    color: var(--hl-color);
+
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+
+    transition: color 0.15s ease, background-color 0.15s ease, transform 0.15s ease;
+}
+
+.form-button:hover,
+.form-button:focus-visible {
+    color: var(--bg-color);
+    background-color: var(--hover-color);
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+    .page-headline {
+        margin: 40px 15px 30px;
+    }
+
+    .page-headline h1 {
+        font-size: 36px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .portfolio-category {
+        margin: 0 15px 30px;
+        padding: 15px;
+    }
+
+    .video-grid-vertical {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-panel {
+        padding: 15px;
+    }
+}
