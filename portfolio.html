@@ -29,9 +29,17 @@
         <h1>Мои работы</h1>
         <p class="page-description">Три направления коммерческого видеопроизводства: полнометражные гайды,
             анимированные гайды и короткие вертикальные ролики</p>
+
+        <div>
+            <button class="form-button active" data-filter="all">Все</button>
+            <button class="form-button" data-filter="youtube">YouTube</button>
+            <button class="form-button" data-filter="motion">Motion</button>
+            <button class="form-button" data-filter="reels">Reels</button>
+
+        </div>
     </section>
 
-    <section class="portfolio-category">
+    <section class="portfolio-category" data-category="youtube">
         <div class="category-info">
             <h2 class="section-title">Горизонтальные видео</h2>
             <p class="small-text">YouTube формат</p>
@@ -45,7 +53,7 @@
         </div>
     </section>
 
-    <section class="portfolio-category">
+    <section class="portfolio-category" data-category="motion">
         <div class="category-info">
             <h2 class="section-title">Анимированные гайды</h2>
             <p class="small-text">Анимированные гайды</p>
@@ -59,7 +67,7 @@
         </div>
     </section>
 
-    <section class="portfolio-category">
+    <section class="portfolio-category" data-category="reels">
         <div class="category-info">
             <h2 class="section-title">Вертикальные ролики</h2>
             <p class="small-text">TikTok/Reels формат</p>
@@ -81,5 +89,6 @@
         <a class="bug-link" href="contacts.html">Нашли баг?</a>
     </article>
 </footer>
+<script src="js/portfolio.js"></script>
 </body>
 </html>

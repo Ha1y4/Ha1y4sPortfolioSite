@@ -1,4 +1,5 @@
 :root {
+    /* Тёмная тема */
     --bg-color: #0d0d0d;
     --header-color: #2c2c2c;
     --button-color: #343434;
@@ -7,6 +8,16 @@
     --hover-color: #ff8000;
     --small-text-color: #888888;
     --footer-color: #000000;
+
+    /* Светлая тема */
+    --light-theme-bg-color: #eeeeee;
+    --light-theme-header-color: #d8d8d8;
+    --light-theme-button-color: #c5c5c5;
+    --light-theme-hl-color: #202020;
+    --light-theme-logo-color: #995000;
+    --light-theme-hover-color: #b85c00;
+    --light-theme-small-text-color: #555555;
+    --light-theme-footer-color: #dddddd;
 }
 
 *, *::before, *::after {
@@ -19,6 +30,20 @@ body {
 
     margin: 0;
 }
+
+body.light-theme {
+    --bg-color: var(--light-theme-bg-color);
+    --header-color: var(--light-theme-header-color);
+    --button-color: var(--light-theme-button-color);
+    --hl-color: var(--light-theme-hl-color);
+    --logo-color: var(--light-theme-logo-color);
+    --hover-color: var(--light-theme-hover-color);
+    --small-text-color: var(--light-theme-small-text-color);
+    --footer-color: var(--light-theme-footer-color);
+
+}
+
+
 
 .logo{
     margin: 0;
@@ -53,6 +78,10 @@ body {
     background-color: var(--header-color);
     border-radius: 25px;
     margin: 15px;
+}
+
+.site-header.light-theme {
+    background-color: var(--header-color);
 }
 
 .header-pages {
@@ -162,6 +191,7 @@ body {
 
     padding: 20px;
     border-radius: 15px;
+    margin: 15px;
 }
 
 .bug-link {

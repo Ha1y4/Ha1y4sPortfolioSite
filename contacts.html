@@ -80,8 +80,11 @@
                 </div>
             </fieldset>
 
-            <label class="form-label" for="client-message">Расскажите о задаче</label>
-            <textarea class="form-input" id="client-message" name="message" rows="5" placeholder="Какой ролик нужен, примерная длина, сроки"></textarea>
+            <div class="textarea-wrapper">
+                <label class="form-label" for="client-message">Расскажите о задаче</label>
+                <textarea class="form-input" id="client-message" name="message" rows="5" maxlength="500" placeholder="Какой ролик нужен, примерная длина, сроки"></textarea>
+                <span class="small-text" id="order-counter"></span>
+            </div>
 
             <button class="form-button" type="button">Отправить заявку</button>
         </form>
@@ -95,8 +98,11 @@
             <label class="form-label" for="bug-email">Ваша почта</label>
             <input class="form-input" type="email" id="bug-email" name="email" placeholder="mail@example.com">
 
-            <label class="form-label" for="bug-message">Что случилось?</label>
-            <textarea class="form-input" id="bug-message" name="message" rows="4" placeholder="Например: на странице «Работы» не открывается видео"></textarea>
+            <div class="textarea-wrapper">
+                <label class="form-label" for="bug-message">Что случилось?</label>
+                <textarea class="form-input" id="bug-message" name="message" rows="4" maxlength="1000" placeholder="Например: на странице «Работы» не открывается видео"></textarea>
+                <span class="small-text" id="bug-counter"></span>
+            </div>
 
             <button class="form-button" type="button">Отправить отчёт</button>
         </form>
@@ -109,5 +115,6 @@
         <a class="bug-link" href="contacts.html">Нашли баг?</a>
     </article>
 </footer>
+<script src="js/counter.js"></script>
 </body>
 </html>
