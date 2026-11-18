@@ -122,6 +122,16 @@
     color: var(--small-text-color);
 }
 
+.textarea-wrapper {
+    position: relative;
+}
+
+.textarea-wrapper span {
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+}
+
 .form-input {
     box-sizing: border-box;
     width: 100%;
