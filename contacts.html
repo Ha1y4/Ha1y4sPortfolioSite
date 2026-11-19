@@ -94,7 +94,7 @@
         <h2 class="section-title">Нашли баг?</h2>
         <p class="small-text">Опишите, что сломалось и на какой странице.</p>
 
-        <form class="contact-form">
+        <form class="contact-form" id="bug-form">
             <label class="form-label" for="bug-email">Ваша почта</label>
             <input class="form-input" type="email" id="bug-email" name="email" placeholder="mail@example.com">
 
@@ -102,19 +102,23 @@
                 <label class="form-label" for="bug-message">Что случилось?</label>
                 <textarea class="form-input" id="bug-message" name="message" rows="4" maxlength="1000" placeholder="Например: на странице «Работы» не открывается видео"></textarea>
                 <span class="small-text" id="bug-counter"></span>
+                <span class="small-text" id="bug-error"></span>
             </div>
 
-            <button class="form-button" type="button">Отправить отчёт</button>
+            <button class="form-button" type="submit">Отправить отчёт</button>
         </form>
     </section>
 </main>
 
 <footer class="site-footer">
     <article>
+        <p><button class="form-button" id="theme-button">Сменить тему</button></p>
         <p class="small-text">ha1y4 2026</p>
         <a class="bug-link" href="contacts.html">Нашли баг?</a>
     </article>
 </footer>
 <script src="js/counter.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/forms.js"></script>
 </body>
 </html>

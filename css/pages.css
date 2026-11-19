@@ -132,6 +132,14 @@
     right: 20px;
 }
 
+#bug-error {
+    position: absolute;
+    top: 0;
+    right: 20px;
+
+    color: var(--hover-color);
+}
+
 .form-input {
     box-sizing: border-box;
     width: 100%;
@@ -207,7 +215,7 @@ textarea.form-input {
     outline-offset: 2px;
 }
 
-.form-button {
+.form-button{
     padding: 12px 28px;
 
     font-family: 'Sansation', Arial, sans-serif;
@@ -223,7 +231,8 @@ textarea.form-input {
 }
 
 .form-button:hover,
-.form-button:focus-visible {
+.form-button:focus-visible,
+.active {
     color: var(--bg-color);
     background-color: var(--hover-color);
     transform: scale(1.05);
@@ -255,4 +264,9 @@ textarea.form-input {
     .form-panel {
         padding: 15px;
     }
+}
+
+#video-modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
 }

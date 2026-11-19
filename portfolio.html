@@ -29,6 +29,8 @@
         <h1>Мои работы</h1>
         <p class="page-description">Три направления коммерческого видеопроизводства: полнометражные гайды,
             анимированные гайды и короткие вертикальные ролики</p>
+        <p class="page-description">На данный момент все видео кликабельны, но ведут на заглушку.
+        В будущем они будут заменены на воспроизведение видео с ютуба через ссылку</p>
 
         <div>
             <button class="form-button" data-filter="all">Все</button>
@@ -48,7 +50,7 @@
         </div>
 
         <div class="video-grid video-grid-horizontal">
-            <div class="video-placeholder video-horizontal"><p>Здесь будет видео</p></div>
+            <div class="video-placeholder video-horizontal" id="test-id"><p>Здесь будет видео aaa</p></div>
             <div class="video-placeholder video-horizontal"><p>Здесь будет видео</p></div>
         </div>
     </section>
@@ -90,7 +92,12 @@
         <a class="bug-link" href="contacts.html">Нашли баг?</a>
     </article>
 </footer>
+<dialog id="video-modal">
+    <video id="modal-video" controls preload="none"></video>
+    <button id="close-modal">Закрыть</button>
+</dialog>
 <script src="js/portfolio.js"></script>
 <script src="js/theme.js"></script>
+<script src="js/video-modal.js"></script>
 </body>
 </html>
