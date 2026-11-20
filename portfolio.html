@@ -77,9 +77,30 @@
         </div>
 
         <div class="video-grid video-grid-horizontal">
-            <div class="video-placeholder video-quadratic"><p>Здесь будет видео</p></div>
-            <div class="video-placeholder video-quadratic"><p>Здесь будет видео</p></div>
-            <div class="video-placeholder video-quadratic"><p>Здесь будет видео</p></div>
+            <div class="portfolio-project" data-project-id="motion-1">
+                <div class="video-placeholder video-quadratic">
+                    <p>Здесь будет видео</p>
+                </div>
+
+                <button class="form-button show-source-btn" type="button">Показать исходник</button>
+                <div class="source-container"></div>
+            </div>
+            <div class="portfolio-project" data-project-id="motion-2">
+                <div class="video-placeholder video-quadratic">
+                    <p>Здесь будет видео</p>
+                </div>
+
+                <button class="form-button show-source-btn" type="button">Показать исходник</button>
+                <div class="source-container"></div>
+            </div>
+            <div class="portfolio-project" data-project-id="motion-3">
+                <div class="video-placeholder video-quadratic">
+                    <p>Здесь будет видео</p>
+                </div>
+
+                <button class="form-button show-source-btn" type="button">Показать исходник</button>
+                <div class="source-container"></div>
+            </div>
         </div>
     </section>
 
@@ -91,10 +112,38 @@
         </div>
 
         <div class="video-grid video-grid-vertical">
-            <div class="video-placeholder video-vertical"><p>Здесь будет видео</p></div>
-            <div class="video-placeholder video-vertical"><p>Здесь будет видео</p></div>
-            <div class="video-placeholder video-vertical"><p>Здесь будет видео</p></div>
-            <div class="video-placeholder video-vertical"><p>Здесь будет видео</p></div>
+            <div class="portfolio-project" data-project-id="reels-1">
+                <div class="video-placeholder video-vertical">
+                    <p>Здесь будет видео</p>
+                </div>
+
+                <button class="form-button show-source-btn" type="button">Показать исходник</button>
+                <div class="source-container"></div>
+            </div>
+            <div class="portfolio-project" data-project-id="reels-2">
+                <div class="video-placeholder video-vertical">
+                    <p>Здесь будет видео</p>
+                </div>
+
+                <button class="form-button show-source-btn" type="button">Показать исходник</button>
+                <div class="source-container"></div>
+            </div>
+            <div class="portfolio-project" data-project-id="reels-3">
+                <div class="video-placeholder video-vertical">
+                    <p>Здесь будет видео</p>
+                </div>
+
+                <button class="form-button show-source-btn" type="button">Показать исходник</button>
+                <div class="source-container"></div>
+            </div>
+            <div class="portfolio-project" data-project-id="reels-4">
+                <div class="video-placeholder video-vertical">
+                    <p>Здесь будет видео</p>
+                </div>
+
+                <button class="form-button show-source-btn" type="button">Показать исходник</button>
+                <div class="source-container"></div>
+            </div>
         </div>
     </section>
 </main>
@@ -107,9 +156,10 @@
     </article>
 </footer>
 <dialog id="video-modal">
-    <video id="modal-video" controls preload="none"></video>
+    <video id="modal-video" controls preload="none" class="video-placeholder"></video>
     <button id="close-modal">Закрыть</button>
 </dialog>
+<script src="js/sources-data.js" defer></script>
 <script src="js/portfolio.js"></script>
 <script src="js/theme.js"></script>
 <script src="js/video-modal.js"></script>
