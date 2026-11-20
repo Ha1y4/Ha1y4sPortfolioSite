@@ -3,9 +3,6 @@ const bugErrors = document.querySelector("#bug-error")
 
 const emailField = document.querySelector("#bug-email")
 
-const data = new FormData(form);
-const name = data.get("client-name");
-
 const msgIsEmpty = "Поле пустое!"
 const invalidEmail = "Некорректная почта"
 const checkPassed = "Форма отправлена!"
