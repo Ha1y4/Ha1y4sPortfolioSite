@@ -46,3 +46,48 @@ buttons.forEach(function (button) {
         filterProjects(button.dataset.filter)
     })
 })
+
+
+
+const sourceButtons = document.querySelectorAll(".show-source-btn");
+
+sourceButtons.forEach(function (button) {
+    const projectCard = button.closest(".portfolio-project");
+    const projectId = projectCard.dataset.projectId;
+    const sourceContainer = projectCard.querySelector(".source-container");
+
+    sourceContainer.id = `source-${projectId}`;
+    button.setAttribute("aria-controls", sourceContainer.id);
+    button.setAttribute("aria-expanded", "false");
+
+    button.addEventListener("click", function () {
+        const openVideo = sourceContainer.querySelector("video");
+        if (openVideo) {
+            openVideo.pause();
+            sourceContainer.replaceChildren();
+            button.textContent = "Показать исходник";
+            button.setAttribute("aria-expanded", "false");
+            return;
+        }
+
+        const source = sourceVideos.find(item => item.projectId === projectId);
+        if (!source) return;
+
+        const title = document.createElement("p");
+        title.className = "source-title";
+        title.id = `source-title-${projectId}`;
+        title.textContent = source.title;
+
+        const sourceVideo = document.createElement("video");
+        sourceVideo.className = "source-video";
+        sourceVideo.src = `video/${source.video}`;
+        sourceVideo.controls = true;
+        sourceVideo.playsInline = true;
+        sourceVideo.preload = "metadata";
+        sourceVideo.setAttribute("aria-labelledby", title.id);
+
+        sourceContainer.append(title, sourceVideo);
+        button.textContent = "Скрыть исходник";
+        button.setAttribute("aria-expanded", "true");
+    });
+});
